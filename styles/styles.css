@@ -1,0 +1,30 @@
+/*:root {  */
+/*	--logo-color: red;*/
+
+/*}*/
+.logo_color {
+	fill: #008d36;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+}
+img.logo {
+	width: 60%;
+	height: 20%;
+}
+
+.phone {
+	display: flex;
+	justify-content: center;
+}
+
+.telegram {
+	display: flex;
+	justify-content: center;
+}
+
+img.telegram {
+	width: 60%;
+	height: 20%;
+}
