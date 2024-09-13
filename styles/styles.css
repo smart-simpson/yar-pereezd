@@ -1,17 +1,25 @@
-/*:root {  */
+:root { 
 /*	--logo-color: red;*/
 
 /*}*/
-.logo_color {
-	fill: #008d36;
-}
-.logo {
+html,
+body {
+	padding: 10px 10px 10px 10px;
+	margin: 0;
+	width: 80%;
 	display: flex;
 	justify-content: center;
 }
-img.logo {
-	width: 60%;
-	height: 20%;
+
+.logo_color {
+	fill: #1f008d;
+}
+.logo {
+	width: 100%;
+}
+
+.line_top {
+	height: 3px;
 }
 
 .phone {
@@ -27,4 +35,32 @@ img.logo {
 img.telegram {
 	width: 60%;
 	height: 20%;
+}
+
+@media screen and (max-width: 350px) {
+	html,
+	body {
+		width: 350px;
+	}
+
+	img.logo {
+		height: 60px;
+	}
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+	img.logo {
+		/* width: 80%; */
+		min-height: 60px;
+		max-height: 80px;
+		/* height: 125px; */
+	}
+}
+
+@media screen and (min-width: 800px) {
+	img.logo {
+		/* width: 700px; */
+		min-height: 80px;
+		max-height: 120px;
+	}
 }

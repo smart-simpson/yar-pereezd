@@ -1,0 +1,95 @@
+html,
+body {
+	padding: 10px 10px 10px 10px;
+	margin: 0;
+}
+
+html {
+	min-width: 350px;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	/* border: 2px solid blue; */
+}
+
+.services {
+	display: flex;
+	justify-content: center;
+}
+
+.delivery,
+.loader,
+.cleaning {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+img.delivery,
+img.loader,
+img.cleaning {
+	height: 180px;
+	width: 180px;
+}
+
+img.loader {
+	/* height: 130px; */
+}
+
+img.cleaning {
+	/* height: 180px; */
+}
+
+@media screen and (max-width: 350px) {
+	html,
+	body {
+		width: 330px;
+	}
+	body {
+		overflow-x: scroll;
+	}
+
+	.img_logo {
+		max-height: 60px;
+	}
+	.services {
+		flex-wrap: wrap;
+	}
+
+	.delivery,
+	.loader,
+	.cleaning {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+	.img_logo {
+		min-height: 60px;
+		max-height: 120px;
+	}
+
+	.services {
+		flex-wrap: wrap;
+	}
+
+	.delivery,
+	.loader,
+	.cleaning {
+		flex-wrap: wrap;
+	}
+
+	.wide {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.img_logo {
+		/* min-height: 80px; */
+		max-height: 120px;
+	}
+}
